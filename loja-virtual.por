@@ -52,6 +52,32 @@ programa {
 
       escreva("Escolha uma opçao: ")
       leia(opcao_menu_principal)
+      
+      Escolha (opcao_menu_principal)
+      {
+        //==========================================
+        //c - CREATE (adicionar itens ao carrinho)
+        //==========================================
+      }
+    
+    caso 1:
+     limpa()
+
+     escreva("---CATALOGO DE PRODUTOS---")
+
+     escreva("1. camisa esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1")
+
+     escreva("2. bone casual (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2")
+
+     escreva("3. tenis de corrida  (Estoque: ", estoque_prod3, ") - R$ ", preco_prod3")
+
+     escreva("digite a quantidade desejada: ")
+     leia(quantidade_temp)
+
+     se (opcao_crud == 1){
+     
+     se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1)
+     }
 
 
 
