@@ -34,7 +34,24 @@ programa {
       escreva("-----------------------------------------")
 
       escreva("MENU PRINCIPAL")
-    }
+
+      escreva("1. ver produtos e adicionar ao carrinho (CREATE)")
+
+
+      escreva("2. ver meus itens no carrinho (READ)")
+
+
+      escreva("3. alterar quantidade no carrinho (READ)")
+
+
+      escreva("4. remover item do carrinho (DELETE)")
+
+
+      escreva("0. finalizar compra e ir ao pagamento")
+
+
+      escreva("Escolha uma opçao: ")
+      leia(opcao_menu_principal)
 
 
 
