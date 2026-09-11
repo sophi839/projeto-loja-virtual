@@ -16,6 +16,30 @@ programa {
     //variaveis do carrinho de compras (qtds dos itens)
     inteiro qtd_carrinho_prod1 = 0
     inteiro qtd_carrinho_prod2 = 0
+    inteiro qtd_carrinho_prod3 = 0
+
+    //variaveis auxiliares para operacoes
+    inteiro quantidade_temp = 0
+    real valor_total_bruto = 0.0
+    real valor_desconto = 0.0
+
+    //1. laço principal do sistema
+    enquanto (opcao_menu_principal != 0){
+
+      //limpa a tela a cada iteracao para manter o menu organizado
+      limpa()
+
+      escreva("=== BEM-VINDO A NOSSA LOJA VIRTUAL ===")
+
+      escreva("-----------------------------------------")
+
+      escreva("MENU PRINCIPAL")
+    }
+
+
+
+
+
   }
 }
   
