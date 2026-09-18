@@ -123,4 +123,15 @@ programa {
 
    escreva("3. tênis de corrida (no carrinho: ", qtd_carrinho_prod3)")
 
+   escreva ("Pressione ENTER para voltar ao menu ...")
+   leia(tecla_pausa)
+
+   pare
+
+   caso contrario:
+   limpa()
+   
+   escreva("opção invalida! escolha uma das opçoẽs do menu.")
+
+   escreva("pressione ENTER para continuar...")
 
