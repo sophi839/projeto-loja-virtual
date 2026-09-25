@@ -60,7 +60,7 @@ programa {
         //==========================================
       }
     
-    caso 1:
+   caso 1:
      limpa()
 
      escreva("---CATALOGO DE PRODUTOS---")
@@ -77,7 +77,7 @@ programa {
      se (opcao_crud == 1){
      
      se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1)
-     } senao {
+   } senao {
 
      escreva("Produto inválido!")
 
@@ -86,7 +86,7 @@ programa {
   escreva ("Pressione ENTER para voltar ao menu ...")
   leia (tecla_pausa)
 
-    pare
+   pare
 
 // =====================================================
 
@@ -167,34 +167,34 @@ programa {
    
   escreva("camisa esportiva removida do carrinho!")
    
-   } senao se (opcao_crud == 2) {
+  } senao se (opcao_crud == 2) {
     
     estoque_prod2 = estoque_prod2 + qtd_carrinho_prod2
     qtd_carrinho_prod2 = 0
     
     escreva("Boné Casual removido do carrinho!")
-   } senao se (opcao_crud == 3) {
+  } senao se (opcao_crud == 3) {
      
       estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
       qtd_carrinho_prod3 = 0
       
       escreva("Tênis de Corrida removido do carrinho!")
   
-   } senao {
+  } senao {
       escreva(" Opcao invalida! ")
-   }
+  }
     escreva("Pressione ENTER para voltar ao menu...")
     leia(tecla_pausa)
-    pare 
+   pare 
 
-    caso 0:
+   caso 0:
       
    limpa()
    escreva("Encerrando seleção de intens e indo para o pagamento...")
        
    pare
        
-     caso contrario:
+   caso contrario:
        
   limpa()
   escreva("opção inválida! escolha uma das opções do menu.")
@@ -202,11 +202,11 @@ programa {
   escreva("presione ENTER para continuar...")
        
   leia(tecla_pausa)
-  pare
+   pare
   }
      
    // CALCULAR VALOR TOTAL DO CARRINHO
-  valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + (qtd_carrinho_prod2 * preco_prod2) + (qtd_carrinho_prod3 * preco_prod3)
+   valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + (qtd_carrinho_prod2 * preco_prod2) + (qtd_carrinho_prod3 * preco_prod3)
 
 
    // 2. ΕΤΑΡA DE PAGAMENTO
@@ -218,7 +218,23 @@ programa {
   escreva("- FORMA DE PAGAMENTO ---")
   escreva("1. Pagamento via PIX (10% de desconto)")
   escreva("2. Cartão de Crédito (Valor normal)")
+  escreva ("Escolha a Forma De Pagamento: ")
+  leia (opcao_pagamento)
 
+  escolha (opcao_pagamento)
+  {
+  caso 1:
+  valor_desconto = valor_total_bruto * 0.10
+  valor_final = valor_total_bruto - valor_desconto
+  pare
+
+  caso 2:
+      valor_desconto = 0.0
+      valor_final = valor_total_bruto
+      pare
+  caso contrario:
+  escreva ("Opção inválida! Processando valor normal.")
+ }
     }
   }
   
