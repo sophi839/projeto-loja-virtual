@@ -136,8 +136,8 @@ programa {
    escreva("pressione ENTER para continuar...")
 
    escreva("Quantidade inválida ou acima do estoque disponível!\n")
-    }
-   } senao {
+   
+    } senao {
     escreva("Opção inválida!\n")
    }
 
@@ -150,7 +150,7 @@ programa {
    // =========================================================
    
    caso 4:
- limpa()
+  limpa()
   escreva("---REMOVER ITEM DO CARRINHO---")
 
   escreva("1. camisa esportiva (no carrinho: ", qtd_carrinho_prod1, ")")
@@ -166,5 +166,21 @@ programa {
 
     estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
     qtd_carrinho_prod1 = 0
+   
     escreva("camisa esportiva removida do carrinho!")
-    }
+   
+   } senao se (opcao_crud == 2) {
+    
+    estoque_prod2 = estoque_prod2 + qtd_carrinho_prod2
+    qtd_carrinho_prod2 = 0
+    
+    escreva("Boné Casual removido do carrinho!")
+   } senao se (opcao_crud == 3) {
+     
+      estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
+      qtd_carrinho_prod3 = 0
+      
+      escreva("Tênis de Corrida removido do carrinho!")
+  
+   } senao {
+      escreva(" Opcao invalida! ")
