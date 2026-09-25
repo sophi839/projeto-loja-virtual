@@ -150,6 +150,21 @@ programa {
    // =========================================================
    
    caso 4:
- 
+ limpa()
+  escreva("---REMOVER ITEM DO CARRINHO---")
 
+  escreva("1. camisa esportiva (no carrinho: ", qtd_carrinho_prod1, ")")
+    
+  escreva("2. bone casual (no carrnho: ", qtd_carrinho_prod2, ")")
 
+  escreva("3. tenis de corrida (no carrinho: ", qtd_carrinho_prod3, ")")
+
+  escreva("escolha o item que deseja remover totalmente: ")
+  leia(opcao_crud)
+
+  se (opcao_crud == 1) {
+
+    estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
+    qtd_carrinho_prod1 = 0
+    escreva("camisa esportiva removida do carrinho!")
+    }
