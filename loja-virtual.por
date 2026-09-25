@@ -79,13 +79,12 @@ programa {
      se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1)
      } senao {
 
-   escreva("Produto inválido!")
+     escreva("Produto inválido!")
 
  }
 
- escreva ("Pressione ENTER para voltar ao menu ...")
-
- leia (tecla_pausa)
+  escreva ("Pressione ENTER para voltar ao menu ...")
+  leia (tecla_pausa)
 
     pare
 
@@ -97,12 +96,11 @@ programa {
 
    caso 2:
 
- limpa ()
+  limpa ()
 
- escreva("--- MEU CARRINHO DE COMPRAS ---")
+  escreva("--- MEU CARRINHO DE COMPRAS ---")
 
-  }
-}
+  
   escreva ("Pressione ENTER para voltar ao menu ...")
   leia (tecla_pausa)
 
@@ -167,7 +165,7 @@ programa {
     estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
     qtd_carrinho_prod1 = 0
    
-    escreva("camisa esportiva removida do carrinho!")
+  escreva("camisa esportiva removida do carrinho!")
    
    } senao se (opcao_crud == 2) {
     
@@ -184,3 +182,19 @@ programa {
   
    } senao {
       escreva(" Opcao invalida! ")
+   }
+    escreva("Pressione ENTER para voltar ao menu...")
+    leia(tecla_pausa)
+    pare 
+
+    caso 0:
+       limpa()
+       escreva("Encerrando seleção de intens e indo para o pagamento...")
+       pare
+       caso contrario:
+       limpa()
+       escreva("opção inválida! escolha uma das opções do menu.")
+       escreva("presione ENTER para continuar...")
+   
+  }
+}
