@@ -24,7 +24,8 @@ programa {
 		real valor_final = 0.0
 
   funcao adicionar_produto(){
-	escolha (opcao_menu_principal)
+
+  	escolha (opcao_menu_principal)
 			{
 				// ====================================================
 				// C - CREATE (Adicionar Itens ao Carrinho)
@@ -81,12 +82,14 @@ programa {
   }
 
   } funcao ver_carrinho() {
-
+    {
 				// ====================================================
 				// R - READ (Visualizar o Carrinho)
 				// ====================================================
-         caso 2:
-					limpa()
+       
+        caso 2:
+					
+          limpa()
 					escreva("--- MEU CARRINHO DE COMPRAS ---\n")
 					se (qtd_carrinho_prod1 == 0 e qtd_carrinho_prod2 == 0 e qtd_carrinho_prod3 == 0)
 					{
@@ -107,17 +110,17 @@ programa {
 					
 					escreva("\nPressione ENTER para voltar ao menu...")
 					leia(tecla_pausa)
-					pare
+				pare 
 
-
-  } 
+    }  
 
   funcao alterar_quantidade() {
 
 				// ====================================================
 				// U - UPDATE (Atualizar Quantidade no Carrinho)
 				// ====================================================
-				caso 3:
+				
+        caso 3:
 					limpa()
 					escreva("--- ALTERAR QUANTIDADE NO CARRINHO ---\n")
 					escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, ")\n")
@@ -179,14 +182,15 @@ programa {
 					leia(tecla_pausa)
 					pare
 
-  }
+   }
 
-   funcao remover_item(){
+     funcao remover_item(){
  
 				// ====================================================
 				// D - DELETE (Remover Item do Carrinho)
 				// ====================================================
-				caso 4:
+				
+        caso 4:
 					limpa()
 					escreva("--- REMOVER ITEM DO CARRINHO ---\n")
 					escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, ")\n")
@@ -252,10 +256,6 @@ programa {
 			escreva("0. Finalizar Compra e Ir ao Pagamento\n")
 			escreva("Escolha uma opção: ")
 			leia(opcao_menu_principal)
-
-		
-
-
 
 		}
 
