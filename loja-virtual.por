@@ -23,6 +23,10 @@ programa {
 		real valor_desconto = 0.0
 		real valor_final = 0.0
 
+  funcao adicionar_produto(){
+    
+  }
+
 	funcao inicio() {
 		
 		// 1. LAÇO PRINCIPAL DO SISTEMA
